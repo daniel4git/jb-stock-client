@@ -51,7 +51,7 @@ public class ChartController {
         @Override
         public void accept(StockPrice stockPrice) {
             Platform.runLater(() ->
-                                      seriesData.add(new Data<>(valueOf(stockPrice.getTime().getSecond()),
+                                      seriesData.add(new Data<String, Double>(valueOf(stockPrice.getTime().getSecond()),
                                                                 stockPrice.getPrice()))
             );
         }

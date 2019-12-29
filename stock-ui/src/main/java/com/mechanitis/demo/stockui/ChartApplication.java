@@ -26,6 +26,7 @@ public class ChartApplication extends Application {
         Platform.exit();
     }
 
+//    Make this inner class static and package visible, other classes will be listening for this event.
     static class StageReadyEvent extends ApplicationEvent {
         public StageReadyEvent(Stage stage) {
             super(stage);
